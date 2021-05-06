@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>EduTop</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EduTop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Apply Online
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#SignUpModal" href="#">Sign up</a>
+
+              </li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#LoginModal" href="#">Login </a></li>
+
+              <li><a class="dropdown-item" href="#">Result</a></li>
+              <li><a class="dropdown-item" href="#">Admit Card</a></li>
+            </ul>
+          </li>
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Course
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Class room Conatct programmes</a></li>
+              <li><a class="dropdown-item" href="#">Class 12th+ </a></li>
+
+              <li><a class="dropdown-item" href="#">Class 11th</a></li>
+              <li><a class="dropdown-item" href="#">class 6th-10th</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#oflineAddmissionModal"
+                  href="oflineAddmission.html">Offline Addmission</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#OnlineAddmissionModal"
+                  href="#">Online Admission</a></li>
+
+              <li><a class="dropdown-item" href="feestructre.html">Fee structre</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Student Zone
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Pay fee online</a></li>
+              <li><a class="dropdown-item" href="#">facility of Loan</a></li>
+
+              <li><a class="dropdown-item" href="#">Time Table</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button class="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#SignUpModal"
+          type="submit">SignUp</button>
+        <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal"
+          data-bs-target="#LoginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Button trigger modal -->
+
+
+  <!--Signup Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModal">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Username">Username</label>
+              <input type="text" class="form-control" id="Username" aria-describedby="Userhelp">
+
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="Password1">Password</label>
+              <input type="password" class="form-control" id="Password1">
+            </div>
+            <div class="form-group">
+              <label for="cPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModal">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--admiision modal-->
+
+  <div class="modal fade" id="oflineAddmissionModal" tabindex="-1" aria-labelledby="oflineAddmissionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: rgb(200, 214, 214);">
+        <div class="modal-header">
+          <h5 class="modal-title" id="oflineAddmissionModal">Offilne Admission</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Offilne Admission process in EduTop Institute</h5>
+          <p>Address : Jagat Building, 11, Samachar,
+            Jawahar Lal Nehru Marg, opposite Vidyashram School, Jaipur, Rajasthan 302017</p>
+          <hr>
+          <p>Conatct No:8949224728</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--online Admission process-->
+  <div class="modal fade" id="OnlineAddmissionModal" tabindex="-1" aria-labelledby="OnlineAddmissionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: rgb(200, 214, 214);">
+        <div class="modal-header">
+          <h5 class="modal-title" id="OnlineAddmissionModal">Online Admission</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group ">
+              <label for="Username ">Name</label>
+              <input type="text" class="form-control" id="Username" aria-describedby="">
+
+            </div>
+            <div class="form-group ">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="Email" aria-describedby="">
+
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" class="form-control" id="age" aria-describedby="">
+            </div>
+            <select class="form-select my-2" aria-label="Default select example">
+              <option selected>Select Gender</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">other</option>
+
+            </select>
+            <div class="form-group">
+              <label for="fname">Father Name</label>
+              <input type="text" class="form-control" id="fname" aria-describedby="">
+            </div>
+            <div class="form-group">
+              <label for="mname">Mother Name</label>
+              <input type="text" class="form-control" id="mname" aria-describedby="">
+
+            </div>
+            <div class="form-group">
+              <label for="RA">Residential Address</label>
+              <input type="text" class="form-control" id="RA" aria-describedby="">
+
+            </div>
+            <div class="form-group">
+              <label for="Cno">Contact NO:</label>
+              <input type="text" class="form-control" id="Cno" aria-describedby="">
+
+            </div>
+            <div class="form-group">
+              <label for="Perc">Previous class % </label>
+              <input type="text" class="form-control" id="Perc" aria-describedby="">
+
+            </div>
+            <select class="form-select my-2" aria-label="Default select example">
+              <option selected>Select Course</option>
+              <option value="1">JEE Mains</option>
+              <option value="2">JEE Advanced</option>
+              <option value="3">NEET</option>
+              <option value="4">AIIMS</option>
+              <option value="5">Class IX to X</option>
+
+              <option value="6">other</option>
+            </select>
+            <div class="mb-3">
+              <label for="FormControlTextarea1" class="form-label">please write your query</label>
+              <textarea class="form-control" id="FormControlTextarea1" rows="5"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="Image/57f.jfif" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Education is a part of life</h5>
+          <p>would you like to joins our teacher provide best matterials and lecture</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <img src="Image/gm.jfif" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption d-none d-md-block ">
+          <h5>Education is a part of life</h5>
+          <p>would you like to joins our teacher provide best matterials and lecture</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Image/g8.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Education is a part of life</h5>
+          <p>would you like to joins our teacher provide best matterials and lecture</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  <div class="container my-2">
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Competitive exams</strong>
+            <h3 class="mb-0">JEE/NEET</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">National Testing Agency (NTA) has been established as a premier, specialist, autonomous and self-sustained testing organization to conduct entrance examinations for admission/fellowship in higher educational institutions..</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="Image/neet-iit-jee.jpg" width="300px" height="300px" alt="...">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Goverment Exam</strong>
+            <h3 class="mb-0">SSC/Bank</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">SSC CGL  is the biggest Government Job recruitment exam conducted in India.On the other hand, SBI and different banks recruit numerous aspirants each year through various SBI exams or IBPS exams for a variety of posts.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="Image/sscbank.png" width="300px" height="300px" alt="...">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Web development</strong>
+            <h3 class="mb-0">Web Desiging</h3>
+            <div class="mb-1 text-muted">Nov 12</div>
+            <p class="card-text mb-auto">Web design is a multi-disciplinary job, where you'd need not only knowledge in design but also skills in developing a website (HTML, CSS, JavaScript). Some web designers are also involved in interaction design when they code for animations and interactions using CSS and/or JavaScript</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="Image/webd.jpg" width="300px" height="300px" alt="...">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Progaramming Coding</strong>
+            <h3 class="mb-0">Learn coding techniqe</h3>
+            <div class="mb-1 text-muted">Nov 11</div>
+            <p class="mb-auto">Coding is a part of programming that deals with converting the language into binary commands for the machine. Programming is the process of creating a program that follows certain standards and performing a certain task.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="image/brooke-cagle--uHVRvDr7pg-unsplash.jpg" width="300px" height="300px" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="Image/JEE-Adv.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JEE Advansed</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/JEE-Main-v1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JEE Main</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/Junior-Division.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Junior Division</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/MEX.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MED</h5>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="Image/Pre-Medical-v1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pre Medical</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/PSPD.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PSPD</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/Commerce.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Commerce</h5>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="Image/DLPD (1).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DLP</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+    <table class="table table-primary">
+
+      <thead>
+        <tr>
+          <th scope="col">Class</th>
+          <th scope="col">Course Name</th>
+          <th scope="col">Course Code</th>
+          <th scope="col">Target</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">IX</th>
+          <td>Wisdom</td>
+          <td>JN</td>
+          <td>JEE( Mains + Advanced)2024</td>
+        </tr>
+        <tr>
+          <th scope="row">X</th>
+          <td>Winner</td>
+          <td>TN</td>
+          <td>JEE( Mains+ Advanced)2023</td>
+        </tr>
+        <tr>
+          <th scope="row">XI</th>
+          <td>Chamipion</td>
+          <td>TB</td>
+          <td>JEE( Mains + Advanced)2022</td>
+        </tr>
+        <tr>
+          <th scope="row">XII</th>
+          <td>Tabiaum</td>
+          <td>TS</td>
+          <td>JEE(Mains + Advanced)2022</td>
+        </tr>
+        <tr>
+          <th scope="row">XIII</th>
+          <td>tiger</td>
+          <td>TR</td>
+          <td>JEE( mains + Advanced) 2021</td>
+        </tr>
+        <tr>
+          <th scope="row">XIV</th>
+          <td>Lion</td>
+          <td>TC</td>
+          <td>JEE(Mains + Advanced) 2020</td>
+        </tr>
+        <tr>
+          <th scope="row">XV</th>
+          <td>Yemrala</td>
+          <td>TM</td>
+          <td>JEE(mains + Advanced) 2020</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start ">
+
+    <div class="text-center p-3" style="background-color: rgba(71, 66, 66, 0.2);text-decoration: none;">
+      @2025 Copyright:
+      <a class="text-dark" href="#">EduTop</a>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

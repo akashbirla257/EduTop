@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>EduTop</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">EduTop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Apply Online
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#SignUpModal" href="#">Sign up</a>
+
+              </li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#LoginModal" href="#">Login </a></li>
+
+              <li><a class="dropdown-item" href="#">Result</a></li>
+              <li><a class="dropdown-item" href="#">Admit Card</a></li>
+            </ul>
+          </li>
+
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Course
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Class room Conatct programmes</a></li>
+              <li><a class="dropdown-item" href="#">Class 12th+ </a></li>
+
+              <li><a class="dropdown-item" href="#">Class 11th</a></li>
+              <li><a class="dropdown-item" href="#">class 6th-10th</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Admission
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#oflineAddmissionModal" href="oflineAddmission.html">Offline Addmission</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#OnlineAddmissionModal" href="#">Online Admission</a></li>
+
+              <li><a class="dropdown-item" href="feestructre.html">Fee structre</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Student Zone
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Pay fee online</a></li>
+              <li><a class="dropdown-item" href="#">facility of Loan</a></li>
+
+              <li><a class="dropdown-item" href="#">Time Table</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <button class="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#SignUpModal"
+          type="submit">SignUp</button>
+        <button class="btn btn-outline-success" type="submit" data-bs-toggle="modal"
+          data-bs-target="#LoginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Button trigger modal -->
+
+
+  
+
+
+ 
+
+  
+ 
+
+
+  <div class="container">
+    <h1 style="margin-top: 5px;">
+        <p class="bg-success text-center">
+            <strong>EduTop FEE Structure 2021-22 Academic Session</strong></p>
+    </h1>
+    <div class="col-xs-12 text-center" >
+    <img src="Image/Fee-Extn-ADD.jpg" class="img-thumbnail" alt="">
+    </div>
+
+    <table class="table table-primary">
+<h1 style="margin-bottom: 0;">
+        <p class="bg-success text-center">
+            <strong>EduTop Fee Structre</strong></p>
+    </h1>
+      <thead>
+        <tr>
+          <th scope="col">Target</th>
+          <th scope="col">view</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">JEE Advanced</th>
+          <td> <button class="btn btn-outline-success search1" data-bs-toggle="modal" data-bs-target="#search1Modal"  type="submit">Search</button></td>
+         
+        </tr>
+        <tr>
+         
+            <th scope="row">JEE Main</th>
+            <td> <button class="btn btn-outline-success search2" data-bs-toggle="modal" data-bs-target="#search2Modal"  type="submit">Search</button></td>
+        </tr>
+        <tr>
+            <th scope="row">NEET/AIIMS</th>
+            <td> <button class="btn btn-outline-success search3" data-bs-toggle="modal" data-bs-target="#search3Modal" type="submit">Search</button></td>
+        </tr>
+        <tr>
+            <th scope="row">PCCP (class V to X)</th>
+            <td> <button class="btn btn-outline-success search4" data-bs-toggle="modal" data-bs-target="#search4Modal" type="submit">Search</button></td>
+        </tr>
+        <tr>
+            <th scope="row">Commerce</th>
+            <td> <button class="btn btn-outline-success search5" data-bs-toggle="modal" data-bs-target="#search5Modal" type="submit">Search</button></td>
+        </tr>
+        
+
+      </tbody>
+    </table>
+
+  </div>
+  <!--search1-->
+
+  <div class="modal fade" id="search1Modal" tabindex="-1" aria-labelledby="search1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="search1Modal">fee details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+          <div class="container">
+
+            <table class="table table-primary">
+          
+              <thead>
+                <tr>
+                  <th scope="col">class</th>
+                  <th scope="col">Course Duration</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Admission fee(NR)</th>
+                  <th scope="col">study matrial fee(NR)</th>
+                  <th scope="col">Tuition Fee(NR)</th>
+                  <th scope="col">Course Fees (AF+SMF+TF)</th>
+                  <th scope="col">I-inst</th>
+                  <th scope="col">II-inst</th>
+                  <th scope="col">Fee Applicable for the month If ARF is paid in respective month</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td rowspan="6">XI</td>
+                          <td rowspan="6">2 Years&nbsp;&nbsp; (XI &amp; XII)</td>
+                          <td rowspan="6">VIKAAS (For Session 2021-22) and for session 22-23 VIJETA Fees will be applicable</td>
+                          <td rowspan="6">JA</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>72458</td>
+                          <td>97458</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                          <td>2nov</td>
+                          
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>77542</td>
+                  <td>102542</td>
+                  
+                  <td>40000</td>
+                  <td>47000</td>
+                
+                  <td>Nov' 28</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>82627</td>
+                  <td>107627</td>
+                
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Dec' 20</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                          <td>15000</td>
+                          <td>87712</td>
+                          <td>112712</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                         
+                          <td>Jan' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>92797</td>
+                  <td>117797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>93797</td>
+                  <td>118797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+          
+                <tr>
+                  <td>XII</td>
+                          <td>1 Year</td>
+                          <td>VIJETA<br>(Session 2022-23)</td>
+                          <td>JP</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>108356</td>
+                          <td>131356</td>
+                          
+                       
+                          <td>93000</td>
+                          <td>62000</td>
+                          <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>1 Year</td>
+                  <td>VISHWAAS<br>(Session 2021-22)</td>
+                  <td>JF</td>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>79237</td>
+                  <td>104237</td>
+                
+                  <td>40000</td>
+                  <td>51800</td>
+                  <td>Oct' 20</td>
+                </tr>
+          
+          
+                
+          
+                
+                
+          
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--search2-->
+  <div class="modal fade" id="search2Modal" tabindex="-1" aria-labelledby="search2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="search2Modal">fee details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+          <div class="container">
+
+            <table class="table table-primary">
+          
+              <thead>
+                <tr>
+                  <th scope="col">class</th>
+                  <th scope="col">Course Duration</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Admission fee(NR)</th>
+                  <th scope="col">study matrial fee(NR)</th>
+                  <th scope="col">Tuition Fee(NR)</th>
+                  <th scope="col">Course Fees (AF+SMF+TF)</th>
+                  <th scope="col">I-inst</th>
+                  <th scope="col">II-inst</th>
+                  <th scope="col">Fee Applicable for the month If ARF is paid in respective month</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td rowspan="6">XI</td>
+                          <td rowspan="6">2 Years&nbsp;&nbsp; (XI &amp; XII)</td>
+                          <td rowspan="6">VIKAAS (For Session 2021-22) and for session 22-23 VIJETA Fees will be applicable</td>
+                          <td rowspan="6">JA</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>72458</td>
+                          <td>97458</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                          <td>2nov</td>
+                          
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>77542</td>
+                  <td>102542</td>
+                  
+                  <td>40000</td>
+                  <td>47000</td>
+                
+                  <td>Nov' 28</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>82627</td>
+                  <td>107627</td>
+                
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Dec' 20</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                          <td>15000</td>
+                          <td>87712</td>
+                          <td>112712</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                         
+                          <td>Jan' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>92797</td>
+                  <td>117797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>93797</td>
+                  <td>118797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+          
+                <tr>
+                  <td>XII</td>
+                          <td>1 Year</td>
+                          <td>VIJETA<br>(Session 2022-23)</td>
+                          <td>JP</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>108356</td>
+                          <td>131356</td>
+                          
+                       
+                          <td>93000</td>
+                          <td>62000</td>
+                          <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>1 Year</td>
+                  <td>VISHWAAS<br>(Session 2021-22)</td>
+                  <td>JF</td>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>79237</td>
+                  <td>104237</td>
+                
+                  <td>40000</td>
+                  <td>51800</td>
+                  <td>Oct' 20</td>
+                </tr>
+          
+          
+                
+          
+                
+                
+          
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--search3-->
+  <div class="modal fade" id="search3Modal" tabindex="-1" aria-labelledby="search3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="search3Modal">fee details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+          <div class="container">
+
+            <table class="table table-primary">
+          
+              <thead>
+                <tr>
+                  <th scope="col">class</th>
+                  <th scope="col">Course Duration</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Admission fee(NR)</th>
+                  <th scope="col">study matrial fee(NR)</th>
+                  <th scope="col">Tuition Fee(NR)</th>
+                  <th scope="col">Course Fees (AF+SMF+TF)</th>
+                  <th scope="col">I-inst</th>
+                  <th scope="col">II-inst</th>
+                  <th scope="col">Fee Applicable for the month If ARF is paid in respective month</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td rowspan="6">XI</td>
+                          <td rowspan="6">2 Years&nbsp;&nbsp; (XI &amp; XII)</td>
+                          <td rowspan="6">VIKAAS (For Session 2021-22) and for session 22-23 VIJETA Fees will be applicable</td>
+                          <td rowspan="6">JA</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>72458</td>
+                          <td>97458</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                          <td>2nov</td>
+                          
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>77542</td>
+                  <td>102542</td>
+                  
+                  <td>40000</td>
+                  <td>47000</td>
+                
+                  <td>Nov' 28</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>82627</td>
+                  <td>107627</td>
+                
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Dec' 20</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                          <td>15000</td>
+                          <td>87712</td>
+                          <td>112712</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                         
+                          <td>Jan' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>92797</td>
+                  <td>117797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>93797</td>
+                  <td>118797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+          
+                <tr>
+                  <td>XII</td>
+                          <td>1 Year</td>
+                          <td>VIJETA<br>(Session 2022-23)</td>
+                          <td>JP</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>108356</td>
+                          <td>131356</td>
+                          
+                       
+                          <td>93000</td>
+                          <td>62000</td>
+                          <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>1 Year</td>
+                  <td>VISHWAAS<br>(Session 2021-22)</td>
+                  <td>JF</td>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>79237</td>
+                  <td>104237</td>
+                
+                  <td>40000</td>
+                  <td>51800</td>
+                  <td>Oct' 20</td>
+                </tr>
+          
+          
+                
+          
+                
+                
+          
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--search4-->
+  <div class="modal fade" id="search4Modal" tabindex="-1" aria-labelledby="search4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="search4Modal">fee details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+          <div class="container">
+
+            <table class="table table-primary">
+          
+              <thead>
+                <tr>
+                  <th scope="col">class</th>
+                  <th scope="col">Course Duration</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Admission fee(NR)</th>
+                  <th scope="col">study matrial fee(NR)</th>
+                  <th scope="col">Tuition Fee(NR)</th>
+                  <th scope="col">Course Fees (AF+SMF+TF)</th>
+                  <th scope="col">I-inst</th>
+                  <th scope="col">II-inst</th>
+                  <th scope="col">Fee Applicable for the month If ARF is paid in respective month</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td rowspan="6">XI</td>
+                          <td rowspan="6">2 Years&nbsp;&nbsp; (XI &amp; XII)</td>
+                          <td rowspan="6">VIKAAS (For Session 2021-22) and for session 22-23 VIJETA Fees will be applicable</td>
+                          <td rowspan="6">JA</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>72458</td>
+                          <td>97458</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                          <td>2nov</td>
+                          
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>77542</td>
+                  <td>102542</td>
+                  
+                  <td>40000</td>
+                  <td>47000</td>
+                
+                  <td>Nov' 28</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>82627</td>
+                  <td>107627</td>
+                
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Dec' 20</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                          <td>15000</td>
+                          <td>87712</td>
+                          <td>112712</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                         
+                          <td>Jan' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>92797</td>
+                  <td>117797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>93797</td>
+                  <td>118797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+          
+                <tr>
+                  <td>XII</td>
+                          <td>1 Year</td>
+                          <td>VIJETA<br>(Session 2022-23)</td>
+                          <td>JP</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>108356</td>
+                          <td>131356</td>
+                          
+                       
+                          <td>93000</td>
+                          <td>62000</td>
+                          <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>1 Year</td>
+                  <td>VISHWAAS<br>(Session 2021-22)</td>
+                  <td>JF</td>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>79237</td>
+                  <td>104237</td>
+                
+                  <td>40000</td>
+                  <td>51800</td>
+                  <td>Oct' 20</td>
+                </tr>
+          
+          
+                
+          
+                
+                
+          
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--search5-->
+  <div class="modal fade" id="search5Modal" tabindex="-1" aria-labelledby="search5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="search5Modal">fee details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+          <div class="container">
+
+            <table class="table table-primary">
+          
+              <thead>
+                <tr>
+                  <th scope="col">class</th>
+                  <th scope="col">Course Duration</th>
+                  <th scope="col">Course Name</th>
+                  <th scope="col">Course Code</th>
+                  <th scope="col">Admission fee(NR)</th>
+                  <th scope="col">study matrial fee(NR)</th>
+                  <th scope="col">Tuition Fee(NR)</th>
+                  <th scope="col">Course Fees (AF+SMF+TF)</th>
+                  <th scope="col">I-inst</th>
+                  <th scope="col">II-inst</th>
+                  <th scope="col">Fee Applicable for the month If ARF is paid in respective month</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  
+                  <td rowspan="6">XI</td>
+                          <td rowspan="6">2 Years&nbsp;&nbsp; (XI &amp; XII)</td>
+                          <td rowspan="6">VIKAAS (For Session 2021-22) and for session 22-23 VIJETA Fees will be applicable</td>
+                          <td rowspan="6">JA</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>72458</td>
+                          <td>97458</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                          <td>2nov</td>
+                          
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>77542</td>
+                  <td>102542</td>
+                  
+                  <td>40000</td>
+                  <td>47000</td>
+                
+                  <td>Nov' 28</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>82627</td>
+                  <td>107627</td>
+                
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Dec' 20</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                          <td>15000</td>
+                          <td>87712</td>
+                          <td>112712</td>
+                          
+                          <td>40000</td>
+                          <td>47000</td>
+                         
+                          <td>Jan' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>92797</td>
+                  <td>117797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+                <tr>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>93797</td>
+                  <td>118797</td>
+                 
+                  <td>40000</td>
+                  <td>47000</td>
+                  
+                  <td>Feb' 21</td>
+                </tr>
+          
+                <tr>
+                  <td>XII</td>
+                          <td>1 Year</td>
+                          <td>VIJETA<br>(Session 2022-23)</td>
+                          <td>JP</td>
+                          <td>10000</td>
+                          <td>15000</td>
+                          <td>108356</td>
+                          <td>131356</td>
+                          
+                       
+                          <td>93000</td>
+                          <td>62000</td>
+                          <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>XII</td>
+                  <td>1 Year</td>
+                  <td>VISHWAAS<br>(Session 2021-22)</td>
+                  <td>JF</td>
+                  <td>10000</td>
+                  <td>15000</td>
+                  <td>79237</td>
+                  <td>104237</td>
+                
+                  <td>40000</td>
+                  <td>51800</td>
+                  <td>Oct' 20</td>
+                </tr>
+          
+          
+                
+          
+                
+                
+          
+              </tbody>
+            </table>
+          
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start ">
+
+    <div class="text-center p-3" style="background-color: rgba(71, 66, 66, 0.2);text-decoration: none;">
+      @2025 Copyright:
+      <a class="text-dark" href="#">EduTop</a>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
